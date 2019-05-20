@@ -29,7 +29,24 @@ class App extends Component {
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
-    }
+    },
+    tabBar: {
+        list: [{
+          pagePath: "pages/index/index",
+          text: "首页",
+          iconPath: "./images/tab/appointment.png",
+          selectedIconPath: "./images/tab/appointment.png"
+        }, {
+          pagePath: "pages/router/index",
+          text: "衣袋",
+          iconPath: "./images/tab/appointment.png",
+          selectedIconPath: "./images/tab/appointment.png"
+        }],
+        color: '#333',
+        selectedColor: '#333',
+        backgroundColor: '#fff',
+        borderStyle: 'black'
+      }
   }
 
   componentDidMount () {}
